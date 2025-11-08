@@ -1,0 +1,15 @@
+{
+  "name": "wedding-invite-azure-functions",
+  "version": "1.0.0",
+  "description": "Azure Functions backend for wedding invitation RSVP system",
+  "license": "MIT",
+  "scripts": {
+    "start": "func start",
+    "test": "echo \"No tests yet...\""
+  },
+  "dependencies": {
+    "@azure/data-tables": "^13.3.1",
+    "@azure/functions": "^4.0.0"
+  },
+  "main": "src/{index.js,functions/*.js}"
+}

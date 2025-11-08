@@ -1,0 +1,53 @@
+# Node modules
+node_modules/
+
+# Build output
+/dist/
+/build/
+/.vite/
+/.cache/
+/.parcel-cache/
+
+# Local environment files
+.env
+.env
+.env.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+logs/
+*.log
+
+# Testing
+coverage/
+.nyc_output/
+coverage/*
+
+# Editor directories and files
+
+.idea/
+*.sublime-workspace
+*.code-workspace
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Misc
+*.tsbuildinfo
+.out/
+
+# Optional: OS-specific files
+ehthumbs.db
+Desktop.ini
+
+# Optional: lockfiles for package managers (uncomment if you don't want to commit them)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+__blobstorage__
+__queuestorage__
+__azurite_db*__.json
