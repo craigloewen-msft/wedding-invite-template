@@ -40,27 +40,20 @@ export default {
       }
     }
   },
-  async created() {
-    // Automatically load all images from the gallery folder
-    try {
-      // Use Vite's import.meta.glob to get all images in the gallery folder
-      const galleryModules = import.meta.glob('/assets/images/gallery/*', {
-        eager: true,
-        query: '?url',
-        import: 'default'
-      })
-      
-      // Convert the module paths to public URLs and sort them
-      const imgs = Object.keys(galleryModules)
-        .map(path => path.replace('/public', ''))
-        .sort() // Sort alphabetically so gallery1.jpeg comes before gallery2.jpeg etc.
-      
-      this.images = imgs
-    } catch (error) {
-      console.error('Error loading gallery images:', error)
-      // Fallback to empty array if something goes wrong
-      this.images = []
-    }
+  created() {
+    // Load gallery images from the public directory
+    // For simplicity and ease of customization, we use a simple array
+    // Users can easily add/remove images by updating this list
+    const galleryImages = [
+      '/assets/images/gallery/gallery1.jpeg',
+      '/assets/images/gallery/gallery2.jpeg',
+      '/assets/images/gallery/gallery3.jpeg',
+      '/assets/images/gallery/gallery4.jpeg',
+      '/assets/images/gallery/gallery5.jpeg',
+      '/assets/images/gallery/gallery6.jpeg',
+    ]
+    
+    this.images = galleryImages
   },
   methods: {
     getImageStyle(imgPath) {
