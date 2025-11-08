@@ -1,3 +1,11 @@
+# EXAMPLE WORKFLOW - This file is disabled by default
+# To use this workflow:
+# 1. Rename this file to remove the .example extension
+# 2. Create an Azure Static Web App and get your deployment token
+# 3. Add the token as a GitHub secret named AZURE_STATIC_WEB_APPS_API_TOKEN
+# 4. Add your other secrets (VITE_PASSWORD_HASH, VITE_PASSWORD_SALT, etc.)
+# 5. Commit and push to trigger the deployment
+
 name: Azure Static Web Apps CI/CD
 
 on:
@@ -23,7 +31,7 @@ jobs:
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
         with:
-          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_WONDERFUL_MOSS_001605A1E }}
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
           repo_token: ${{ secrets.GITHUB_TOKEN }} # Used for Github integrations (i.e. PR comments)
           action: "upload"
           ###### Repository/Build Configurations - These values can be configured to match your app requirements. ######
@@ -47,5 +55,5 @@ jobs:
         id: closepullrequest
         uses: Azure/static-web-apps-deploy@v1
         with:
-          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_WONDERFUL_MOSS_001605A1E }}
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
           action: "close"
