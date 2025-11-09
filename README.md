@@ -2,6 +2,10 @@
 
 A beautiful, modern wedding invitation website template built with Vue.js, featuring password protection, multi-language support, RSVP functionality, and a photo gallery.
 
+## Demo
+
+[View the live demo here](https://kind-pebble-0089d911e.3.azurestaticapps.net) to see the template in action.
+
 ## Features
 
 - 🔒 Password-protected access
@@ -10,10 +14,6 @@ A beautiful, modern wedding invitation website template built with Vue.js, featu
 - 📸 Photo gallery
 - 📝 RSVP form with Azure Functions backend
 - 🎨 Beautiful animations and transitions
-
-## Demo
-
-Visit the live demo to see the template in action.
 
 ## Quick Start
 
